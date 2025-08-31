@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #dbb7b7;
+  font-family: Arial, sans-serif;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-weight: 700;
+  font-size:20px;
+}
+
+.game-container {
+  background-color: #f0f0f0;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(93, 85, 85, 0.1);
+  text-align: center;
+  max-width: 600px;
+  width: 90%;
+}
+
+/* Title styling */
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+/* Button styling */
+button {
+  padding:0;
+  margin: 10px;
+  font-size: 20px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+.result{
+  font-size: larger;
+  color:#e74c3c;
+}
+
+.result-emoji-display{
+  font-size: 60px;
+  margin-top: 10px;
+  transition: transform 0.3s ease;
+}
+.result-emoji-display:hover {
+  transform: scale(1.2);
+}
+
+
+/* Result and text */
+.result, .move, .score {
+  margin-top: 20px;
+}
+
+button img {
+  display: block;
+  margin: 0 auto;
+}
+
+.move-icon {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+button:hover .move-icon {
+  transform: scale(1.1);
+}
+
+/* Reset button style */
+.Reset-score {
+  margin-top: 20px;
+  background-color: #e74c3c;
+  padding:10px 10px;
+}
+
+.Reset-score:hover {
+  background-color: #c0392b;
+    transform: scale(1.1);
+
+}
